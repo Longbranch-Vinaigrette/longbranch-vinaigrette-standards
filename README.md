@@ -2,17 +2,29 @@
 
 The following standards are a MUST for this stack to work properly\
 
-## Submodules
+# Folder/Files Structure
 
-On any project using submodules, the submodules MUST be added/cloned on the submodules\
-folder on the root of the project, a small exception applies:\
-If the app is not on the root of the repository, then the submodules folder MUST not be\
-on the root of the repository, but at the root of the app.\
-\
-Example:\
+In this section I'll explain how the folders/files should be structured for every app.\
+
+## Folder 'src' structure
+
+All app logic MUST reside on the src subfolder.\
+The 'src' subfolder, must be at the root of the app, e.g:\
 /my_project\
 | /.gitignore\
 | /README.md\
 | /app\
 | | /main.py\
-| | /submodules <-- Here\
+| | /src <-- 'src' subfolder here\
+
+### Submodules
+
+On any project using submodules, the submodules MUST be added/cloned on the src/submodules\
+folder, the 'src' folder MUST be at the root of the app, e.g:\
+/my_project\
+| /.gitignore\
+| /README.md\
+| /app\
+| | /main.py\
+| | /src					<-- The 'src' folder is at app root folder\
+| | | /submodules <-- Add submodules here
