@@ -2,6 +2,23 @@
 
 The following standards are a MUST for this stack to work properly\
 
+# .gitignore
+
+The .gitignore MUSt ignore the following files
+
+
+```
+# Data stuff
+local_data.json
+local_settings.json
+pid
+.cache
+
+# For pycharm
+.idea/
+```
+
+
 # settings.json
 
 Every DevTools app MUST have a settings.json file, the specification of this file is\
