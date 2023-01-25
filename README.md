@@ -2,6 +2,31 @@
 
 The following standards are a MUST for this stack to work properly\
 
+# settings.json
+
+Every DevTools app MUST have a settings.json file, the specification of this file is\
+right here ./settings.json.default.js\
+
+## Commands
+
+The commands that the user is able to run at the root of the app\
+
+### Start command
+
+The start command SHOULD capture the pid of the app whenever possible and create the\
+./pid file where it will be stored, this can be done by the following command:\
+
+
+```bash
+[RUN_APP_COMMAND] & echo $! > ./pid
+```
+
+
+Where [RUN_APP_COMMAND] is the command you use start the app.\
+The only exception is when the pid is not the one where the actual app is running, in\
+that case the user should create its own method to start the app and capture the pid.\
+
+
 # Folder/Files Structure
 
 In this section I'll explain how the folders/files should be structured for every app.\
