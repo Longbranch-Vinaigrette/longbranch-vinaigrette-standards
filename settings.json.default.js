@@ -69,6 +69,20 @@ export default {
 					// Description for the end users(me xD)
 					description:
 						"Server ip or fqdn for authentication related things, like logging in,\n register, etc",
+					// Description list(Optional)
+					// A description list is just like description, but
+					// with a twist, every item in the list is
+					// a line.
+					descriptionList: [
+						// This is just an example, text copied from
+						// repository-mirror.
+						"A command that is run after a git pull.\n",
+						"Use the following to replace stuff on the command by its representation:\n",
+						"$NAME: Is replaced for the repository name.\n",
+						"$USER: Is replaced for the repository owner username.\n",
+						"$PATH: Is replaced for the repository path.\n",
+						"Example: curl http://some.domain.com/$USER/$NAME",
+					],
 				},
 			],
 		},
