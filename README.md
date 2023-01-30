@@ -12,7 +12,7 @@ The .gitignore MUSt ignore the following files
 local_data.json
 local_settings.json
 pid
-.cache
+.cache/
 
 # For pycharm
 .idea/
