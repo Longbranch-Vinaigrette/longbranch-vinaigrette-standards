@@ -1,24 +1,18 @@
 export default {
 	// Wether the repository/app is considered deprecated or not
 	deprecated: false,
-
 	// App manager name
 	devtools: {
 		// Public app name
 		name: "Perseverancia Games",
-
 		// App repository name
 		repositoryName: "perseverancia-games",
-
 		// App version
 		version: "v1.0.0",
-
 		// App description
 		description: "Frontend website for perseverancia games.",
-
 		// Main app type(next.js, react, python, nodejs, c++, etc.)
 		appType: "Next.js",
-
 		// Commands that we are able to run at the root of the app
 		commands: {
 			// Command to setup the app(Might not exist), if it exists this
@@ -59,6 +53,10 @@ export default {
 			// Name of the environment file, I had to add this because the normal name should be
 			// '.env', but next.js uses '.env.local'
 			fileName: ".env.local",
+			// Short global description
+			description: "Some description",
+			// Whether the app uses my personal api dotenv5 or not
+			dotenv5: false,
 			// Environment variables
 			variables: [
 				{
