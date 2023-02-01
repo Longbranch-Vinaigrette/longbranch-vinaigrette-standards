@@ -3,6 +3,8 @@ export default {
 	deprecated: false,
 	// App manager name
 	devtools: {
+		// This very document version
+		specificationVersion: "1.0.0",
 		// Information about the app functionality
 		information: {
 			// App type (server, webserver, standalone, documentation)
@@ -11,11 +13,19 @@ export default {
 			appType: "webserver",
 			// App framework (next.js, react.js, nodejs, etc.)
 			appFramework: "next.js",
-			// App language(javascript, python, c++, c, etc.)
+			// Framework information
+			frameworkInformation: {
+				// Version
+				version: "1.0.0"
+			},
+			// App language(javascript, python, c++/cpp, c, etc.)
 			language: "markdown",
+			// Language information
+			languageInformation: {
+				// Language version
+				version: "1.0.0"
+			}
 		},
-		// This very document version
-		specificationVersion: "1.0.0",
 		// Public app name
 		name: "Perseverancia Games",
 		// App repository name
