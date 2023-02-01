@@ -3,6 +3,19 @@ export default {
 	deprecated: false,
 	// App manager name
 	devtools: {
+		// Information about the app functionality
+		information: {
+			// App type (server, webserver, standalone, documentation)
+			// Documentation is supposed to be just documentation and nothing else,
+			// like this very repository.
+			appType: "webserver",
+			// App framework (next.js, react.js, nodejs, etc.)
+			appFramework: "next.js",
+			// App language(javascript, python, c++, c, etc.)
+			language: "markdown",
+		},
+		// This very document version
+		specificationVersion: "1.0.0",
 		// Public app name
 		name: "Perseverancia Games",
 		// App repository name
@@ -11,8 +24,6 @@ export default {
 		version: "v1.0.0",
 		// App description
 		description: "Frontend website for perseverancia games.",
-		// Main app type(next.js, react, python, nodejs, c++, etc.)
-		appType: "Next.js",
 		// Commands that we are able to run at the root of the app
 		commands: {
 			// Command to setup the app(Might not exist), if it exists this
@@ -21,15 +32,34 @@ export default {
 			// Command to build the app
 			build: "next build",
 			// Command to start the app, optionally add default args like port in this case
-			// You should caputure its pid whenever possible, by using the command:
-			// & echo $! > ./pid
-			start: "next start -p 38200 & echo $! > ./pid",
+			start: "next start -p 38200",
 			// Command to stop the app
 			// It should be used if the AppManager class can't stop the app by itself
 			stop: "[Command to stop]",
-			// Global start
-			// A start command that no matter where it's run, it will start the app
-			globalStart: "[CD somewhere and start]",
+		},
+		// More info on commands, mainly used to build and choose where the build will
+		// be moved to.
+		commandsInfo: {
+			// Small description
+			description:
+				"With these options you can build and choose where the files will be moved to",
+			// Order of commands to successfully run the app
+			commandOrder: ["setup", "build", "start"],
+			// Info on specific commands
+			commands: [
+				{
+					// Formal name
+					formalName: "Build command",
+					// Name of the command
+					name: "build",
+					// Description
+					description: "Command to build the app.",
+					// Where the build(or whatever the command does) is gonna be located.
+					location: "./out",
+					// Whether the build output is can be moved from the directory to another one
+					canBeMoved: false,
+				},
+			],
 		},
 		// Arguments that the app can receive
 		arguments: [

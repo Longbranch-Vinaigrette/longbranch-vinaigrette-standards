@@ -4,7 +4,7 @@ The following standards are a MUST for this stack to work properly\
 
 # .gitignore
 
-The .gitignore MUSt ignore the following files
+The .gitignore MUST ignore the following files
 
 
 ```
@@ -19,9 +19,9 @@ pid
 ```
 
 
-# settings.json
+# Settings
 
-Every DevTools app MUST have a settings.json file, the specification of this file is\
+Every DevTools app MUST have a 'settings.json' file, the specification of this file is\
 right here ./settings.json.default.js\
 
 ## Commands
@@ -70,3 +70,7 @@ folder, the 'src' folder MUST be at the root of the app, e.g:\
 | | /main.py\
 | | /src					<-- The 'src' folder is at app root folder\
 | | | /submodules <-- Add submodules here
+
+# Local data
+
+Local data(local_data.json) MAY overwrite statements in 'settings.json'
