@@ -3,6 +3,8 @@ export default {
 	deprecated: false,
 	// App manager name
 	devtools: {
+		// State whether the repository is considered a submodule or not
+		submodule: false,
 		// This very document version
 		specificationVersion: "1.0.0",
 		// Information about the app functionality

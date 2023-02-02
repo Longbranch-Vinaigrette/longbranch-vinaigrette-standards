@@ -4,29 +4,23 @@ The following standards are a MUST for this stack to work properly\
 
 # .gitignore
 
-The .gitignore MUST ignore the following files
-
-
-```
-# Data stuff
-local_data.json
-local_settings.json
-pid
-.cache/
-
-# For pycharm
-.idea/
-```
+The .gitignore MUST ignore the following files on [.gitignore](.gitignore)
 
 
 # Settings
 
 Every DevTools app MUST have a 'settings.json' file, the specification of this file is\
-right here ./settings.json.default.js\
+right here on [settings spec](./settings.json.spec.js)\
 
 ## Commands
 
 The commands that the user is able to run at the root of the app\
+
+## Setup
+
+For python it's not necessary to create a "setup" command, because to setup the\
+required packages, it should be done by checking the "dependencies" field on settings.json\
+and if it has submodules you can check the ".gitmodules" file that git creates.\
 
 ### Start command
 
