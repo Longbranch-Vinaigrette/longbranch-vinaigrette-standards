@@ -26,6 +26,15 @@ export default {
 				version: "1.0.0"
 			}
 		},
+		// Declare project dependencies
+		dependencies: [
+			{
+				// Dependency name
+				"name": "psutil",
+				// Its version
+				"version": "5.9.4"
+			}
+		],
 		// Public app name
 		name: "Perseverancia Games",
 		// App repository name
