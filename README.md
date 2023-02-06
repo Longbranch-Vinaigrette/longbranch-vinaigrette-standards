@@ -6,6 +6,18 @@ The following standards are a MUST for this stack to work properly\
 
 The .gitignore MUST ignore the following files on [.gitignore](.gitignore)
 
+# Cache folder
+
+The cache folder(on the root folder of the repository ./.cache) can be used
+to store temporal data, like logs and other stuff.
+
+## Logs
+
+Logs will be stored in "./.cache/logs/YYYY/MM/DD.txt
+
+The logs must indicate the date where an item was logged.
+
+It's recommended to delete logs monthly.
 
 # Priorities
 
