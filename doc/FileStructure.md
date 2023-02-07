@@ -2,6 +2,10 @@
 
 In this section I'll explain how the folders/files should be structured for every app.\
 
+## Documentation folder
+
+The folder './doc' should be used for documentation files of the app.\
+
 ## Folder 'src' structure
 
 All app logic MUST reside on the src subfolder.\
