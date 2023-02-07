@@ -11,4 +11,10 @@
 	<!-- This is how repository mirror will install dependencies -->
 	- [ ] Subsequently checking if the app dependencies are satisfied.
 
+# Node.js app manager TODO
 
+See [Node.js app manager TODO](../nodejs-app-manager/TODO.md)
+
+# Python app manager TODO
+
+See [Python app manager TODO](../python_app_manager/TODO.md)

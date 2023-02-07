@@ -44,7 +44,13 @@ from each other are these: \
 * It will be specific to the language itself, so there's less room for errors.
 
 The user should also be able to use these dependencies managers as \
-modules(nodejs), packages(python, rust, etc.) or submodules(any).
+modules(nodejs), packages(python, rust, etc.) or submodules(any). \
+
+Every path dependency MUST be saved on the database, just like this app \
+when cloning  or pulling by using the following keyword: \
+Keyword: path_repository_\[REPOSITORY NAME\] \
+
+Where \[REPOSITORY NAME\] is the repository name.
 
 ## Methods
 
