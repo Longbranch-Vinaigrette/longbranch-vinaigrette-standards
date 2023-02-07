@@ -2,6 +2,7 @@
 # Data stuff
 pid
 .local/
+.cache/
 
 # For pycharm
 .idea/

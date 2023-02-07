@@ -3,6 +3,8 @@ export default {
 	deprecated: false,
 	// App manager name
 	devtools: {
+		// App importance
+		importance: "core", // Possible values: core, optional
 		// State whether the repository is considered a submodule or not
 		submodule: false,
 		// This very document version
