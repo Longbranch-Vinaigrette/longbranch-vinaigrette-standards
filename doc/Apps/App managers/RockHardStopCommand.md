@@ -16,8 +16,8 @@ The problem is that it might be computing-expensive.
 
 ## Implementation
 
-The implementation it's easy, just get every pid on the system and then \
-retrieve every process cwd, one you've done that you can check which one \
+The implementation it's easy, just get every pid on the system and then 
+retrieve every process cwd, one you've done that you can check which one 
 is the correct one and just Finish Him.
 
 To get the cwd by pid checkout this [Question on stackoverflow](https://unix.stackexchange.com/questions/94357/find-out-current-working-directory-of-a-running-process) \
@@ -32,3 +32,7 @@ readlink -e /proc/<PID>/cwd
 
 Where <PID> is the app pid.
 
+### Kill subprocesses and zombie processes
+
+To kill subprocesses and zombie processes you can check if a process cwd starts
+with the given path

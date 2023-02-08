@@ -20,3 +20,10 @@ application a few things must be done: \
 
 The '--stop' argument stops the application. \
 Note that you must have implemented the [PID's spec](./Pids.md)
+
+### --rock-hard-stop: To really stop the application for good
+
+This command stops an app, subprocesses, and even zombie processes because
+it uses the cwd instead of pid's to kill processes.
+
+Implement it with this spec [Rock hard stop command](./RockHardStopCommand.md).
