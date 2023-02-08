@@ -8,3 +8,6 @@ These are some general spec rules for every app manager out there.
 	and it's really hard to stop subprocesses started by that app, therefore
 	is better to use the next one to stop apps, the 'Rock hard stop command'.
 3. [Rock hard stop command](./RockHardStopCommand.md)
+4. [Discovery(Optional)](./Discovery.md)
+	Although optional it do be a cool feature to add for higher and easier
+	administration of repositories.
