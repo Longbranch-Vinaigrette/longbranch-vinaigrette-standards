@@ -8,8 +8,9 @@ work completely different.
 ## App structure
 
 * Longbranch-Vinaigrette
-	* repository-mirror 
+	* repository-mirror - 
 			Clones and pulls repositories from the given user.
-	* python-app-manager
+	* python-app-manager - 
 			It's in charge of managing the app doing operations like: building, starting,
-			stopping, etc.
+			stopping, etc. \
+			It also has a built-in local repository discovery system.
