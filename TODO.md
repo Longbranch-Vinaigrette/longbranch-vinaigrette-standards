@@ -4,27 +4,24 @@
 
 ### General
 
-<!-- Only for apps Devtools compatible and not deprecated should this be done -->
-<!-- Also a flag like "core": true, should be added and one like "optional": true
-to settings.json of every Devtools compatible package. -->
-- [ ] Setup and build apps that are DevTools compatible automatically.
-	- [ ] On start, check for app dependencies and install them.
-		- [ ] Python packages
-			- [ ] Get installed python packages list
-			- [ ] Get a list of packages needed by the apps.
-				- [ ] Install those who aren't
-		- [ ] Node modules
-			- [ ] Get installed modules list
-			- [ ] Get a list of modules needed by the apps.
-				- [ ] Install those who aren't
+
+### Python app manager
+
+- [ ] Longbranch Vinaigrette integration
+	- [ ] Apps that have 'priority' set to core.
+		- [ ] Automatically install dependencies and run.
+- [X] On start, check for app dependencies and install them.
+	- [X] Python packages
+	- [X] Node modules
+- [ ] On git pull
 	- [ ] If they are running, automatically restart them.
 
-### Devtools Website
+### Longbranch Vinaigrette Website
 
 - [X] Make a functional website
   - [X] The website must be able to communicate with the backend server dev-gui
   <!-- Use \() to escape parethenses -->
-- [ ] \(Optional) Make it look nice :D
+- [ ] \(Optional\) Make it look nice :D
 - [ ] Apps
   - [ ] App
     - [X] Show app status.
