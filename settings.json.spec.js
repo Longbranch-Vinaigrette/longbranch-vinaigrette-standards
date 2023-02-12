@@ -108,6 +108,15 @@ export default {
 			fileName: ".env.local",
 			// Short global description
 			description: "Some description",
+			// Long description list
+			descriptionList: [
+
+				"Use the following to replace stuff on the command by its representation:\n",
+				"$NAME: Is replaced for the repository name.\n",
+				"$USER: Is replaced for the repository owner username.\n",
+				"$PATH: Is replaced for the repository path.\n",
+				"Example: curl http://some.domain.com/$USER/$NAME",
+			]
 			// Whether the app uses my personal api dotenv5 or not
 			dotenv5: false,
 			// Environment variables
