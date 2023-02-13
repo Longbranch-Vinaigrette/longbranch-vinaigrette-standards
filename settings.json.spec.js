@@ -1,6 +1,19 @@
 export default {
 	// Wether the repository/app is considered deprecated or not
 	deprecated: false,
+	// Longbranch Vinaigrette is the updated version of devtools
+	// the main difference is that this one is more decoupled than
+	// how devtools was before
+	longbranchVinaigrette: {
+		// Order
+		// Order is the subomdule hierarchical authority,
+		// a submodule of lower order can't contain a submodule of
+		// higher order.
+		// 1 is the lowest level of order, any app/submodule can own it.
+		// n is the highest level of ownership, no other app/submodule
+		// can own it.
+		order: 1,
+	},
 	// App manager name
 	// It was called devtools before
 	devtools: {
