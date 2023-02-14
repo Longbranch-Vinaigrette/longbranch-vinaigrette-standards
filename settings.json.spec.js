@@ -13,6 +13,8 @@ export default {
 		// n is the highest level of ownership, no other app/submodule
 		// can own it.
 		order: 1,
+		// Override default data path
+		overrideDefaultDataPath: "/path/to/folder"
 	},
 	// App manager name
 	// It was called devtools before
